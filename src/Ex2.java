@@ -12,7 +12,6 @@ public class Ex2 {
     public static final double normalTaxFactor = 0.16;
     public static final double bigTaxFactor = 0.32;
 
-
     public void getEmployeePayment(double employeePayment, int taxLevel){
     }
 
