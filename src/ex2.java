@@ -14,14 +14,14 @@ public class Ex2 {
         employeePayment = scanner.nextDouble();
     }
 
-    public void calculateTaxExpense(double employeePayment,int TAX_LEVEL, double NORMAL_TAX_BASE, double NORMAL_TAX_FACTOR, double BIG_TAX_BASE, double BIG_TAX_FACTOR){
+    public void matchTaxExpense(double employeePayment,int TAX_LEVEL, double NORMAL_TAX_BASE, double NORMAL_TAX_FACTOR, double BIG_TAX_BASE, double BIG_TAX_FACTOR){
         if (employeePayment > TAX_LEVEL){
-            double bigTaxExpense = (employeePayment * BIG_TAX_FACTOR) - BIG_TAX_BASE;
-            System.out.println("Your tax is equals " + bigTaxExpense);
+            double caluclateTaxExpanse = (employeePayment * BIG_TAX_FACTOR) - BIG_TAX_BASE;
+            System.out.println("Your tax is equals " + caluclateTaxExpanse );
         }
         if (employeePayment <= TAX_LEVEL) {
-            double taxExpense = (employeePayment * NORMAL_TAX_FACTOR) - NORMAL_TAX_BASE;
-            System.out.println("Your tax is equal " + taxExpense);
+            double caluclateTaxExpanse = (employeePayment * NORMAL_TAX_FACTOR) - NORMAL_TAX_BASE;
+            System.out.println("Your tax is equal " + caluclateTaxExpanse);
         }
     }
 
@@ -30,6 +30,6 @@ public class Ex2 {
         Ex2 ex2 = new Ex2();
 
         ex2.getEmployeePayment();
-        ex2.calculateTaxExpense(employeePayment,TAX_LEVEL, NORMAL_TAX_BASE, NORMAL_TAX_FACTOR,BIG_TAX_BASE,BIG_TAX_FACTOR);
+        ex2.matchTaxExpense(employeePayment,TAX_LEVEL, NORMAL_TAX_BASE, NORMAL_TAX_FACTOR,BIG_TAX_BASE,BIG_TAX_FACTOR);
     }
 }
